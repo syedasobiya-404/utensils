@@ -1,0 +1,926 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  header {
+    width: 100%;
+    height:  135vh;
+    background-image:url('../image/homeslider.jpg' );
+    /* background-image:url('https://i.guim.co.uk/img/media/fd3da03a4e71bd4079d7251786192bbd8532f2f5/0_128_7281_4369/master/7281.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=6f0cca121d4dbb3e6993ec9edc74591d'); */
+    background-repeat: no-repeat;
+    background-size: cover ;
+  }
+  .font{
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Cherry Bomb One', cursive;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans Nag Mundari', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Shantell Sans', cursive;
+  }
+  .font2{
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Cherry Bomb One', cursive;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans Nag Mundari', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Shantell Sans', cursive;
+  }
+  #homebgimg{
+    background-image: url(../image/slider3.jpg);
+  }
+  /* navbar adjustmant */
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    background: rgba(8, 7, 7, 0.404);
+}
+  /* logo adjustmant */
+ nav .logo{
+    width: 35%;
+    text-align: center;
+    padding-bottom:5px ;
+ }
+ .name1{
+    font-size: 40px;
+    text-shadow: 3px 3px 3px black;
+    padding-left: 20px;
+    color: white;
+ }
+ .slogan{
+    color: white;
+    text-shadow: 1px 2px 2px black;
+ }
+ /* menu adjustment */
+  nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav .menu a{
+    /* width: 20%; */
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+  nav .menu a:hover{
+    border-bottom: 4px #f1c40f solid;
+    transition: 0.5s;
+  }
+  /* main section start */
+  main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+   section h3{
+    font-size: 60px;
+    font-weight: 200;
+    color: rgb(12, 12, 12);
+    text-shadow: 1px 2px 3px black;
+   }
+  section h1{
+    font-size: 70px;
+    font-weight: lighter;
+    color: rgb(235, 229, 229);
+    text-shadow: 2px 2px 2px black;
+  }
+  section .deal{
+    display: none;
+    color:rgb(148, 143, 143);
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+  }
+  section .service{
+    display: none;
+    color: black;
+    text-shadow: 1px 2px 3px black;
+  }
+  .change_content::after{
+    content: "";
+    animation : changetext 15s infinite linear ;
+  }
+
+  @keyframes changetext{
+    0%{
+        content:" Kitchen Appliances at reasonable prices" ;
+    }
+    50%{
+        content:" Improve your cooking exprience" ;
+    }
+    100%{
+        content: "Best deals for your kitchen";
+    }
+  }
+/* navbar end */
+  /* section 2 start */
+  .title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 25px;
+  }
+  .title{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1.6rem;
+  }
+  .title::before, .title::after{
+    content: '';
+    height: 2px;
+    background: #000;
+    display: block;
+  }
+  /* para start */
+  .intro{
+    margin: 30px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .intro p{
+    font-size: 35px;
+    font-style: italic;
+  }
+  .para{
+    background: rgba(128, 128, 128, 0.158);
+    padding: 50px 25px;
+  }
+  /* cards start */
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 35px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 13%;
+  }
+  .card{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 2px 8px #000;
+    border-radius: 15px 15px 15px 15px;
+  }
+ .card-image{
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+ }
+ .car-1{
+  background-image:url("../image2/bakingcategory.webp") ;
+ }
+ .car-2{
+  background-image:url("../image2/Cutlery-Set.jpg") ;
+ }
+ .car-3{
+  background-image:url("../image2/dinner\ set.jpg") ;
+ }
+ .car-4{
+  background-image:url("../image2/non\ sticks.jpg") ;
+ }
+ .car-5{
+  background-image:url("../image2/cookware.jpg") ;
+ }
+ .car-6{
+  background-image:url("../image2/accessories.jpg") ;
+ }
+ .car-7{
+  background-image:url("../image2/bbq.jpg") ;
+ }
+ .car-8{
+  background-image:url("../image2/teacup.jpg") ;
+ }
+ .car-9{
+  background-image:url("../image2/kitchen\ appliances.jpg") ;
+ }
+ .car-55{
+  background-image:url("../image2/jugglass.jpg") ;
+ }
+ .car-56{
+  background-image:url("../image2/spoonknife.jpg") ;
+ }
+ .car-57{
+  background-image:url("../image2/kitdeco.jpg") ;
+ }
+ 
+ div h2{
+   font-size: 25px;
+   padding-top: 10px;
+   text-align: center;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.253);
+ }
+ div p{
+  font-style: italic;
+  padding: 2px 10px;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px rgb(161, 159, 159);
+ }
+ div .btn{
+  font-size: 17px;
+  border-radius:10px 10px 10px 10px ;
+  padding: 3px 10px;
+  margin-top: 10px;
+  margin-left: 26%;
+  background: #000;
+  box-shadow: 1px 1px 5px #000;
+  border: none;
+ }
+ div .btn a{
+  color: white;
+ }
+ div .btn:hover{
+  background: rgba(128, 128, 128, 0.856);
+  box-shadow: 1px 1px 5px #666464;
+  border: none;
+ }
+ div .btn a:hover{
+  color: #000;
+ }
+ /* FOOTER start */
+ footer{
+  margin-top: 10px;
+ }
+ .footerItems{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 90%;
+   margin-left: 5%;
+   background: #d6d3d3;
+ }
+.logo2 .name2{
+  font-size: 3rem;
+  color: black;
+}
+.logo2 .slogan1 {
+  color: black;
+  text-shadow: 1px 1px 1px rgb(27, 27, 27);
+  margin-left: 170px;
+}
+.address{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.address p{
+  margin-top: 8px;
+  font-style: italic;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #383737;
+}
+.address span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  color: #383737;
+  text-shadow: 1px 1px 2px #757474;
+}
+.link{
+  color: #383737;
+
+}
+/* payment start */
+.payment p{
+  text-align: center;
+  font-size: 25px;
+  background: #646262;
+  color: #000;
+  text-shadow: 1px 1px 2px #000000a4;
+}
+ /* ABOUT US START */  /* ABOUT US START */  /* ABOUT US START */  /* ABOUT US START */  /* ABOUT US START */
+#bgimg{
+  width: 100%;
+  height:  100vh;
+  background-image:url('../image/aboutslide.jpg') !important;
+  background-repeat: no-repeat;
+  background-size: cover ; 
+}
+.wedo{
+  margin: 30px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wedo p{
+  font-size: 20px;
+}
+.para{
+  background: rgba(128, 128, 128, 0.158);
+  padding: 50px 25px;
+}
+.wedo p span{
+  color: #000;
+  font-size: 22px;
+  font-weight: 100px;
+  text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.384);
+}
+.wedo .para .parahd{
+  padding:4px 0px ;
+  text-shadow: 2px 2px 3px rgba(41, 39, 39, 0.575);
+  font-size: 35px;
+} 
+ /* CONTACT US START */  /* CONTACT US START */  /* CONTACT US START */  /* CONTACT US START */  /* CONTACT US START */
+#bgimgcontact{
+  width: 100%;
+  height:  100vh;
+  background-image:url('../image/slidera.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+.message{
+  padding: 25px ;
+}
+.message h2{
+  font-size: 40px;
+}
+#contact{
+  margin: 2px 200px;
+}
+.form{
+  background: #f1f0f05e;
+  border-radius: 20px;
+}
+#contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact form input{
+  font-size: 25px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  border-bottom: 2px solid #6c757d;
+  margin-top: 10px;    
+  padding: 20px 10px;
+  width: 550px;
+  box-shadow: 1px 1px 4px #38373791;
+}
+#contact .s-btn{
+  background: #6d6e6e;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Cabin';
+  align-self: flex-start;
+  margin: 20px 370px;
+  font-size: 18px;
+  box-shadow: 2px 3px 5px #5c5b5b;
+}
+#contact form .msg {
+  padding-bottom: 70px;
+}
+.location{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 35px 0px;
+}
+.location .map{
+  margin: 0px 30px;
+}
+/* BAKING Tools START */  /* BAKING Tools START */  /* BAKING Tools START */  /* BAKING Tools START */  
+#bgimgbakingtools{
+  /* cards categories START */  
+  width: 100%;
+  height:  80vh;
+  /* background-image:url('../image/bakingtoolsbg.webp') !important; */
+  background-image:url('https://cdn.pixabay.com/photo/2012/04/13/11/36/baking-ingredients-32002_640.png') !important;
+  background: #bdb9b95b;
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+.category{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 35px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 13%;
+}
+.categories{
+  background-color: white;
+  width: 200px;
+  height: 320px;
+  box-shadow: 2px 2px 8px #000;
+  border-radius: 15px 15px 15px 15px;
+}
+.card-images{
+width: 200px;
+height: 150px;
+background-size: cover;
+border-radius: 15px 15px 0 0;
+}
+.wight{
+  font-size: 20px;
+}
+.price{
+  font-size: 20px;
+  font-style: normal;
+}
+div .view{
+  font-size: 15px;
+  border-radius:10px 10px 10px 10px ;
+  padding: 3px 10px;
+  margin-top: 10px;
+  margin-left: 19%;
+  background: #000;
+  box-shadow: 1px 1px 5px #000;
+  border: none;
+ }
+ div .view a{
+  color: white;
+ }
+ div .view:hover{
+  background: rgba(128, 128, 128, 0.856);
+  box-shadow: 1px 1px 5px #666464;
+  border: none;
+ }
+ div .view a:hover{
+  color: #000;
+ }
+ /* image baking tools page *//* image baking tools page *//* image baking tools page */
+ .car-10{
+  background-image:url("../image2/measuringdry-baking.jpg") ;
+ }
+ .car-11{
+  background-image:url("../image2/bakingsheet.jpg") ;
+ }
+ .car-12{
+  background-image:url("../image2/rubberspatula.jpg") ;
+ }
+ .car-13{
+  background-image:url("../image2/bakingbursh.webp") ;
+ }
+ .car-14{
+  background-image:url("../image2/bakingpan.jpg") ;
+ }
+ .car-15{
+  background-image:url("../image2/recangularpan.jpg") ;
+ }
+ .car-16{
+  background-image:url("../image2/TartPan.jpg") ;
+ }
+ .car-17{
+  background-image:url("../image2/SpringformPan.jpg") ;
+ }
+ .car-18{
+  background-image:url("../image2/PizzaPan.jpg") ;
+ }
+ .car-19{
+  background-image:url("../image2/soufflédish.jpg") ;
+ }
+ .car-20{
+  background-image:url("../image2/FlutedTubePan.jpg") ;
+ }
+ .car-21{
+  background-image:url("../image2/Parchmentpaper.jpg") ;
+ }
+ .car-22{
+  background-image:url("../image2/CakeSlicer.jpg") ;
+ }
+ .car-23{
+  background-image:url("../image2/cakedeco.jpg") ;
+ }
+ .car-24{
+  background-image:url("../image2/cakeflower.jpg") ;
+ }
+ /* image CULTERY page *//* image CULTERY page *//* image CULTERY page */
+ #bgimgcultery{
+     /* cards categories START */  
+  width: 100%;
+  height:  80vh;
+  /* background-image:url('../image/bakingtoolsbg.webp') !important; */
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx9ybLniYrrMyctMHyXn8SLQvvwtiFWgxlfA&usqp=CAU') !important;
+  background: #bdb9b95b;
+  background-repeat: no-repeat;
+  background-size: cover ;
+ }
+ .car-25{
+  background-image:url("../image2/forks.jpg") ;
+ }
+ .car-26{
+  background-image:url("../image2/cultery.jpg") ;
+ }
+ .car-27{
+  background-image:url("../image2/cultery1.jpg") ;
+ }
+ .car-28{
+  background-image:url("../image2/classic.jpg") ;
+ }
+ .car-29{
+  background-image:url("../image2/greenset.jpg") ;
+ }
+ /* image DINNER page *//* image DINNER page *//* image DINNER page */
+ #bgimgdinner{
+  /* cards categories START */  
+width: 100%;
+height:  80vh;
+/* background-image:url('../image/bakingtoolsbg.webp') !important; */
+background-image:url('../image/dinner.webp') !important;
+background: #bdb9b95b;
+background-repeat: no-repeat;
+background-size: cover ;
+ }
+ .car-30{
+  background-image:url("../image2/dinner1.jpg") ;
+ }
+ .car-31{
+  background-image:url("../image2/dinner2.webp") ;
+ }
+ .car-32{
+  background-image:url("../image2/dinner3.jpg") ;
+ }
+ .car-33{
+  background-image:url("../image2/dinner4.jpg") ;
+ }
+ .car-34{
+  background-image:url("../image2/dinner5.jpg") ;
+ }
+ .car-35{
+  background-image:url("../image2/dinner6.jpg") ;
+ }
+ .car-36{
+  background-image:url("../image2/dinner7.jpg") ;
+ }
+ .car-37{
+  background-image:url("../image2/dinner8.jpg") ;
+ }
+ .car-38{
+  background-image:url("../image2/dinner9.jpg") ;
+ }
+ .car-39{
+  background-image:url("../image2/dinner10.jpg") ;
+ }
+
+ /* image NON STICK page *//* image NON STICK page *//* image NON STICK page */
+ #bgimgnonstick{
+  /* cards categories START */  
+width: 100%;
+height:  80vh;
+/* background-image:url('../image/bakingtoolsbg.webp') !important; */
+background-image:url('../image2/non\ sticks2.jpg') !important;
+background: #bdb9b95b;
+background-repeat: no-repeat;
+background-size: cover ;
+ }
+ .car-40{
+  background-image:url("../image2/non\ sticks3.jpg") ;
+ }
+ .car-41{
+  background-image:url("../image2/non\ sticks4.jpg") ;
+ }
+ .car-42{
+  background-image:url("../image2/parchment.webp") ;
+ }
+ .car-43{
+  background-image:url("../image2/parchment.webp") ;
+ }
+ .car-44{
+  background-image:url("../image2/parchment.webp") ;
+ }
+ /* image COOKWARE page *//* image COOKWARE page *//* image COOKWARE page */
+ .car-45{
+  background-image:url("../image2/parchment.webp") ;
+ }
+ .car-46{
+  background-image:url("../image2/parchment.webp") ;
+ }
+ .car-47{
+  background-image:url("../image2/parchment.webp") ;
+ }
+ .car-48{
+  background-image:url("../image2/parchment.webp") ;
+ }
+ .car-49{
+  background-image:url("../image2/parchment.webp") ;
+}
+/* image BBQ's ITEMS page *//* image BBQ's ITEMS page *//* image BBQ's ITEMS page */
+ .car-50{
+   background-image:url("../image2/parchment.webp") ;
+  }
+  .car-51{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-52{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-53{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-54{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  /* image TEA CUPS AND MUGS page *//* image TEA CUPS AND MUGS page *//* image TEA CUPS AND MUGS page */
+  .car-55{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-56{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-57{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-58{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-59{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-60{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-61{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-62{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-63{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-64{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  /* image jug and glass page *//* image jug and glass page *//* image jug and glass page */
+  .car-65{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-66{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-67{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-68{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-69{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-70{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  /* image spoons and knife page *//* image spoons and knife page *//* image spoons and knife page */
+  .car-76{
+    background-image:url("../image2/spoonknife.jpg") ;
+  }
+  .car-71{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-72{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-73{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-74{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-75{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-77{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-78{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-79{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-80{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  .car-81{
+    background-image:url("../image2/jugglass.jpg") ;
+  }
+  /* image decoration page *//* image decoration page *//* image decoration page */
+  .car-82{
+    background-image:url("../image2/kitdeco.jpg") ;
+  }
+  .car-83{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-84{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-85{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-86{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-87{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-88{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-89{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-90{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-91{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-92{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  .car-93{
+    background-image:url("../image2/parchment.webp") ;
+  }
+  /* image KITCHEN APPLIANCES page *//* image KITCHEN APPLIANCES page *//* image KITCHEN APPLIANCES page */
+  /* image ACCESSORIES page *//* image ACCESSORIES page *//* image ACCESSORIES page */
+ /* description  page *//* description  page *//* description  page */
+#description{
+  width: 100%;
+  height:  15vh;
+}
+ .bgblack{
+  background: rgba(20, 20, 20, 0.747);
+ }
+.sproduct{
+  width: 90%;
+  margin: 2% 05%;
+}
+.productimg{
+  width:800px;
+  height:70vh;
+  border-radius: 10px;
+}
+.sproduct{
+  display: flex;
+}
+.productdescription{
+  padding: 0em 4em;
+}
+.details{
+  font-size: 40px;
+  text-shadow: none;
+  font-weight: bolder;
+}
+.rating{
+  margin: 7px 0px;
+}
+span{
+  font-size: 25px;
+  color: rgb(148, 148, 139);
+}
+span:hover{
+  color: yellow;
+}
+.rupees{
+  margin-top: 4px;
+  padding: 1px 5px;
+  background: #000;
+  color: white;
+  border-radius: 5px 5px;
+  font-size: 18px;
+}
+.quantity{
+  padding-top: 25px;
+}
+.wrapper{
+  margin: 3px;
+  background: #fffefe;
+  width: 100px;
+  height:50px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #00000050;
+  border-radius: 5px;
+}
+.wrapper span{
+ width: 100% ;
+ text-align: center;
+ font-weight: 600px;
+ font-size: 30px;
+ color: #000;
+ cursor: pointer;
+}
+.num{ 
+  border-right: 2px solid rgba(49, 48, 48, 0.384);
+  border-left: 2px solid rgba(49, 48, 48, 0.473);
+  pointer-events: none;
+}
+/* cart start *//* cart start */
+.cartbtn{
+  padding: 16px 32px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  box-shadow: 3px 3px 8px rgba(46, 46, 46, 0.644);
+  transform: all ease 0.5s;
+  position: relative;
+  margin: 5px;
+}
+.shop{
+  color: yellow;
+  font-size: 25px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.addspan{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 500ms ease-in-out transform;
+}
+.added-to-cart{
+  transform: translate(-50%, -200%);
+}
+.bi-cart-fill{
+  transform: translate(-1500%, -50%);
+  animation-delay: 200ms;
+}
+.add-to-cart-animation{
+  transform: translate(-50%, -50%) scale(0);
+}
+.added-to-cart-animation{
+  transform: translate(-50%, -50%) scale(0);
+}
+@keyframes cart {
+  0% { transform: translate(-800%, -50%); }
+  30% { transform: translate(-50%, -50%); }
+  70% { transform: translate(-70%, -50%); }
+  100% { transform: translate(350px, -50%); }
+}
+.buynow{
+  margin-top: 7px;
+  margin-left: 3px;
+  width: 50%;
+  height: 2rem;
+  background: #000;
+  box-shadow: 3px 3px 8px rgba(46, 46, 46, 0.644);
+  border: none;
+  border-radius: 4px;
+}
+.buynow a{
+  color: #8f8d8d;
+  font-size: 20px;
+  font-weight: 600;
+}
+#productdetails{
+  width: 90%;
+  margin: 3% 05%;
+}
+h4{
+  font-size: 25px;
+  text-shadow: 1px 1px 2px gray;
+}
+.productinfo{
+  font-size: 25px;
+}
+/* slider start */
+
+
+
+
